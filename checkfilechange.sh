@@ -1,4 +1,4 @@
 #!/bin/bash
 
-echo 'test'
+ (stat -c %y  "/etc/passwd" | tail -n 1 | sudo tee -a "/var/log/passwdchange.txt")
 
